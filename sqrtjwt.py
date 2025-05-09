@@ -9,6 +9,7 @@ jwt = JWTManager(app)
 
 @app.route('/login', methods=['POST'])
 def login():
+    print("Prueba")
     username = request.json.get('username')
     password = request.json.get('password')
     
